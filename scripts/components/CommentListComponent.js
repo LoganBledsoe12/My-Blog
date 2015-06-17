@@ -6,7 +6,7 @@ module.exports = React.createClass({
 		return (
 			<ul>
 				{this.props.comments.map(function(comment){
-					return <li></li>
+					return <li>{comment.get('text')}</li>
 				})}
 			</ul>
 		);
